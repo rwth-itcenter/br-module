@@ -1,0 +1,14 @@
+{
+    "name": "BackupRestore",
+    "alias": "backuprestore",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BackupRestore\\Providers\\BackupRestoreServiceProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}
