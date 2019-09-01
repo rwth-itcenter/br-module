@@ -15,6 +15,7 @@
     ],
     "license": "MIT",
     "type": "laravel-module",
+    "homepage": "https://github.com/rwth-itcenter/br-module",
     "extra": {
         "laravel": {
             "providers": [
