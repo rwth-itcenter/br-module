@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\BackupRestore\Http\Controllers;
+namespace Modules\Backup\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class BackupRestoreController extends Controller
+class BackupController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class BackupRestoreController extends Controller
      */
     public function index()
     {
-        return view('backuprestore::index');
+        return view('backup::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class BackupRestoreController extends Controller
      */
     public function create()
     {
-        return view('backuprestore::create');
+        return view('backup::create');
     }
 
     /**
@@ -43,7 +43,7 @@ class BackupRestoreController extends Controller
      */
     public function show($id)
     {
-        return view('backuprestore::show');
+        return view('backup::show');
     }
 
     /**
@@ -53,7 +53,7 @@ class BackupRestoreController extends Controller
      */
     public function edit($id)
     {
-        return view('backuprestore::edit');
+        return view('backup::edit');
     }
 
     /**

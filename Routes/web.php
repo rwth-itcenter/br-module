@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('backuprestore')->group(function() {
-    Route::get('/', 'BackupRestoreController@index');
+Route::prefix('backup')->group(function() {
+    Route::get('/', 'BackupController@index');
 });

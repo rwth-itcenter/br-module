@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\BackupRestore\Database\Seeders;
+namespace Modules\Backup\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class BackupRestoreDatabaseSeeder extends Seeder
+class BackupDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

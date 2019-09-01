@@ -1,19 +1,12 @@
 <?php
 
-namespace Modules\BackupRestore\Providers;
+namespace Modules\Backup\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class BackupRestoreServiceProvider extends ServiceProvider
+class BackupServiceProvider extends ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
     /**
      * Boot the application events.
      *
@@ -46,10 +39,10 @@ class BackupRestoreServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('backuprestore.php'),
+            __DIR__.'/../Config/config.php' => config_path('backup.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'backuprestore'
+            __DIR__.'/../Config/config.php', 'backup'
         );
     }
 
@@ -60,7 +53,7 @@ class BackupRestoreServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/backuprestore');
+        $viewPath = resource_path('views/modules/backup');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -69,8 +62,8 @@ class BackupRestoreServiceProvider extends ServiceProvider
         ],'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/backuprestore';
-        }, \Config::get('view.paths')), [$sourcePath]), 'backuprestore');
+            return $path . '/modules/backup';
+        }, \Config::get('view.paths')), [$sourcePath]), 'backup');
     }
 
     /**
@@ -80,18 +73,18 @@ class BackupRestoreServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/modules/backuprestore');
+        $langPath = resource_path('lang/modules/backup');
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'backuprestore');
+            $this->loadTranslationsFrom($langPath, 'backup');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'backuprestore');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'backup');
         }
     }
 
     /**
      * Register an additional directory of factories.
-     * 
+     *
      * @return void
      */
     public function registerFactories()
