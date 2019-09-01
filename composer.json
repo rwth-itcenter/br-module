@@ -1,10 +1,16 @@
 {
-    "name": "nwidart/backuprestore",
-    "description": "",
+    "name": "IT-Center-RWTH-Aachen-University/br-module",
+    "description": "Backup/Restore Service - Sevire Modul",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Maks Tverdenko",
+            "email": "tverdenko@itc.rwth-aachen.de"
+        },
+        {
+            "name": "Michael Behnke",
+            "email": "behnke@itc.rwth-aachen.de",
+            "homepage": "http://www.itc.rwth-aachen.de/cms/IT-Center/IT-Center/Team/~epvp/Mitarbeiter-CAMPUS-/?gguid=0xAE2F78A62ED42D43BD57844C8B5296C4&allou=1",
+            "role": "Developer"
         }
     ],
     "extra": {
@@ -13,7 +19,7 @@
                 "Modules\\BackupRestore\\Providers\\BackupRestoreServiceProvider"
             ],
             "aliases": {
-                
+
             }
         }
     },
