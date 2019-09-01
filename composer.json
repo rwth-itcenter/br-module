@@ -18,7 +18,7 @@
     "type": "laravel-module",
     "homepage": "https://github.com/rwth-itcenter/br-module",
     "require": {
-        "nwidart/laravel-modules": "^5.0",
+        "nwidart/laravel-modules": "^5.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
