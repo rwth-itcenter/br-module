@@ -1,4 +1,4 @@
-# BAckup/Restore SeviRe Module
+# Backup/Restore SeviRe Module
 
 https://github.com/rwth-itcenter/br-module
 
