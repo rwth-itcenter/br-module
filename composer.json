@@ -1,10 +1,11 @@
 {
     "name": "rwth-itcenter/br-module",
-    "description": "Backup/Restore Service - Sevire Modul",
+    "description": "Backup/Restore Service - SeviRe Modul",
     "authors": [
         {
             "name": "Maks Tverdenko",
-            "email": "tverdenko@itc.rwth-aachen.de"
+            "email": "tverdenko@itc.rwth-aachen.de",
+            "role": "Developer"
         },
         {
             "name": "Michael Behnke",
@@ -16,23 +17,9 @@
     "license": "MIT",
     "type": "laravel-module",
     "homepage": "https://github.com/rwth-itcenter/br-module",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Modules\\BackupRestore\\Providers\\BackupRestoreServiceProvider"
-            ],
-            "aliases": {
-
-            }
-        }
-    },
     "require": {
         "nwidart/laravel-modules": "^5.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Modules\\BackupRestore\\": ""
-        }
+        "mcamara/laravel-localization": "^1.3",
     },
     "minimum-stability": "dev",
     "prefer-stable": true
