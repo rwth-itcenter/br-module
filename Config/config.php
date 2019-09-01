@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => 'Br',
+    'name' => 'BackupRestore',
     'visibility' => (function () {
         if (env('BR_ENABLE', false) === true) {
             if (env('BR_ADMINONLY', false) === true) {
