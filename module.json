@@ -1,10 +1,13 @@
 {
     "name": "BackupRestore",
     "alias": "backuprestore",
-    "description": "",
-    "keywords": [],
+    "description": "SeviRe Module for IT Center Service Backup/Restore at RWTH Aachen University",
+    "keywords": ["backup","itc","laravel-modul"],
     "active": 1,
     "order": 0,
+    "providers": [
+        "Modules\\BackupRestore\\Providers\\BackupRestoreServiceProvider"
+    ],
     "aliases": [],
     "files": [],
     "requires": []
