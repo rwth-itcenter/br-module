@@ -18,8 +18,8 @@
     "type": "laravel-module",
     "homepage": "https://github.com/rwth-itcenter/br-module",
     "require": {
-        "nwidart/laravel-modules": "^5.0"
-        "mcamara/laravel-localization": "^1.3",
+        "nwidart/laravel-modules": "^5.0",
+        "mcamara/laravel-localization": "^1.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
