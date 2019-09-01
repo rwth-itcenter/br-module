@@ -33,5 +33,7 @@
         "psr-4": {
             "Modules\\BackupRestore\\": ""
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
