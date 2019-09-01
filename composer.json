@@ -13,6 +13,8 @@
             "role": "Developer"
         }
     ],
+    "license": "MIT",
+    "type": "laravel-module",
     "extra": {
         "laravel": {
             "providers": [
